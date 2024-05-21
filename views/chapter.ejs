@@ -1,0 +1,31 @@
+<%- include('partials/header') %>
+<link rel="stylesheet" href="/styles/chapter.css">
+
+    <div class="chapter-navigation">
+        <% if (prevChapterId) { %>
+            <a href="/chapter/<%= prevChapterId %>" class="nav-button prev">Previous Chapter</a>
+        <% } %>
+        <% if (nextChapterId) { %>
+            <a href="/chapter/<%= nextChapterId %>" class="nav-button next">Next Chapter</a>
+        <% } %>
+    </div>
+
+    
+    <div class="chapter-pages">
+        <% chapurl.forEach(url => { %>
+            <div class="chapter-page">
+                <img src="<%= url %>" alt="Chapter Page">
+            </div>
+        <% }) %>
+    </div>
+
+    <div class="chapter-navigation">
+        <% if (prevChapterId) { %>
+            <a href="/chapter/<%= prevChapterId %>" class="nav-button prev">Previous Chapter</a>
+        <% } %>
+        <% if (nextChapterId) { %>
+            <a href="/chapter/<%= nextChapterId %>" class="nav-button next">Next Chapter</a>
+        <% } %>
+    </div>
+
+    <%- include('partials/footer') %>

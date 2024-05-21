@@ -1,0 +1,30 @@
+<%- include('partials/header') %>
+<link rel="stylesheet" href="/styles/search.css">
+<main class="search">
+    <div class="container-manga-results">
+        <div class="manga-results">
+            <% if (mangaList && mangaList.length > 0) { %>
+                <% mangaList.forEach(manga => { %>
+                    <div class="manga-card">
+                        <div class="manga-card-cover">
+                            <a href="/title/<%= manga.id %>/<%= manga.title %>">
+                                <img src="<%= manga.cover %>" alt="<%= manga.title %> cover">
+                            </a>
+                        </div>
+                        <div class="manga-info">
+                            <a href="/title/<%= manga.id %>/<%= manga.title %>" class="manga-title">
+                                <h2><%= manga.title %></h2>
+                            </a>
+                            <p class="manga-description"><%= manga.description %></p>
+                        </div>
+                    </div>
+                <% }) %>
+            <% } else { %>
+                <p>No manga found</p>
+            <% } %>
+        </div>
+    </div>
+</main>
+
+<%- include('partials/footer') %>
+

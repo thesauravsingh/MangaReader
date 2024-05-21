@@ -1,0 +1,56 @@
+/* Main content styling */
+.index {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 2.5vh); /* Adjust based on header height */
+    background-image: url('/images/howl.jpeg');
+    background-size: cover;
+    background-position: center; /* Ensure the top of the image aligns with the top of the container */
+    background-repeat: no-repeat;
+    padding-top: 70px; /* Adjust based on header height */
+    padding-bottom: 70px; /* Adjust based on footer height */
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    
+}
+
+.search-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    align-items: center; /* Center the search bar vertically */
+    
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #555;
+}
+

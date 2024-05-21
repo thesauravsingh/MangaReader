@@ -1,0 +1,37 @@
+<%- include('partials/header') %>
+<link rel="stylesheet" href="/styles/detail.css">
+
+<main class="detail">
+    <div class="container-manga-detail">
+        <div class="manga-info">
+            <div class="manga-cover">
+                <img src="<%= manga.cover %>" alt="<%= manga.title %> cover">
+            </div>
+            <div class="manga-details">
+                <h1><%= manga.title %></h1>
+                <p><strong>Author:</strong> <%= manga.author %></p>
+                <p><strong>Published Date:</strong> <%= manga.publishedDate %></p>
+                <p><strong>Last Updated:</strong> <%= manga.lastUpdate %></p>
+                <p class="manga-description"><%= manga.description %></p>
+            </div>
+        </div>
+        <div class="chapter-list">
+            <h2>Chapters</h2>
+            <% if (chapters && chapters.length > 0) { %>
+                <ul>
+                    <% chapters.forEach(chapter => { %>
+                        <li>
+                            <a href="/chapter/<%= chapter.id %>">
+                                Chapter <%= chapter.chapterNumber %>: <%= chapter.title %>
+                            </a>
+                        </li>
+                    <% }) %>
+                </ul>
+            <% } else { %>
+                <p>No chapters found</p>
+            <% } %>
+        </div>
+    </div>
+</main>
+
+<%- include('partials/footer') %>

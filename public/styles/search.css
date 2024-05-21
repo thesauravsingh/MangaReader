@@ -1,0 +1,80 @@
+/* Manga Search */
+/* Add the following styles to your existing content.css */
+
+/* Manga card styling */
+/* Add the following styles to your existing content.css */
+
+/* Manga card styling */
+.container-manga-results {
+    margin-top: 20px;
+}
+
+.manga-results {
+    margin-top: 20px;
+}
+
+.manga-card {
+    display: flex;
+    background-color: #f0f1f2; /* Dark teal color similar to ChatGPT sidebar */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.manga-card-cover {
+    flex: 0 0 120px;
+}
+
+.manga-card-cover img {
+    width: 120px;
+    height: auto;
+    display: block;
+}
+
+.manga-info {
+    padding: 20px;
+    flex: 1;
+    color: #242424; /* Light text color */
+}
+
+.manga-info .manga-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #242424; /* Lighter teal color for the title */
+    text-decoration: none;
+}
+
+.manga-info .manga-title:hover {
+    text-decoration: underline;
+}
+
+.manga-info .manga-description {
+    font-size: 1rem;
+    color: #242424; /* Light grey color for the description */
+}
+
+/* Manga description page styling */
+.manga-description-page {
+    text-align: center;
+    margin-top: 20px;
+    color: #edf2f7; /* Light text color */
+}
+
+.manga-description-page .manga-cover img {
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.manga-description-page .manga-details {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.search {
+    padding-top: 70px; /* Adjust this value based on the actual header height */
+    background-color: #e5e7eb;
+}
+
