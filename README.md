@@ -1,7 +1,3 @@
-Readme.md
-Certainly! Here's a GitHub README for your Manga Reader project:
-
----
 
 # Manga Reader
 
@@ -114,6 +110,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 - [EJS](https://ejs.co/) for the template engine.
 - [Axios](https://axios-http.com/) for the HTTP client.
 
----
 
-Feel free to adjust the content according to your specific needs and add any additional information that might be relevant to your project.
